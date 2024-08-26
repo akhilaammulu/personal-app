@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: personal-finance-management-app
+
+  main:
+    allow-circular-references: true
+
+  data:
+    mongodb:
+      host: mongodb-service
+      port: 27017
+      database: appfinance
+
+server:
+  port: 4444

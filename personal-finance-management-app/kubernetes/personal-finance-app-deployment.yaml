@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: personal-finance-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: personal-finance-app
+  template:
+    metadata:
+      labels:
+        app: personal-finance-app
+    spec:
+      containers:
+      - name: personal-finance-app
+        image: akhisam/personal-finance-management-app:latest
+        ports:
+        - containerPort: 4444

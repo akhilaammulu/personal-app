@@ -1,0 +1,119 @@
+:root {
+    --primary-color: #6a11cb; /* Vibrant violet */
+    --secondary-color: #2575fc; /* Rich blue */
+    --card-background: #f4f4f9; /* Soft light gray */
+    --card-shadow: 0 12px 35px rgba(0, 0, 0, 0.15); /* Softer, more defined shadow */
+    --text-color: #333; /* Dark gray for better readability */
+    --highlight-color: #ff5722; /* Accent color for buttons or highlights */
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-color);
+}
+
+.auth-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+}
+
+.auth-container {
+    background-color: var(--card-background);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: var(--card-shadow);
+    width: 100%;
+    max-width: 400px;
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.auth-container h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: var(--primary-color);
+    font-weight: 700; /* Slightly bolder for better emphasis */
+    font-size: 26px; /* Increased font size for better visibility */
+}
+
+.auth-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #666;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px 20px 12px 45px;
+    border: 1px solid #ccc;
+    border-radius: 8px; /* Rounded corners for a modern look */
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+    background-color: #f9f9f9;
+    color: var(--text-color);
+}
+
+.form-group input:focus {
+    border-color: var(--highlight-color); /* Highlighted input border on focus */
+    background-color: #fff;
+    outline: none;
+}
+
+.auth-button {
+    background: linear-gradient(135deg, var(--primary-color), var(--highlight-color));
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.auth-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(135deg, var(--highlight-color), var(--primary-color));
+}
+
+.auth-switch {
+    text-align: center;
+    margin-top: 20px;
+    color: var(--text-color);
+}
+
+.auth-switch a {
+    color: var(--highlight-color);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.auth-switch a:hover {
+    text-decoration: underline;
+    color: var(--secondary-color);
+}

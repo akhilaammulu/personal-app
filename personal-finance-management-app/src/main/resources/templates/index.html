@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Finance Management Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style1.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <h1>Finance App</h1>
+            <nav>
+                <ul>
+                    <li class="active"><a href="#"><i class="icon">📊</i> Dashboard</a></li>
+                    <li><a href="#"><i class="icon">💸</i> Transactions</a></li>
+                    <li><a href="#"><i class="icon">💰</i> Savings Account</a></li>
+                    <li><a href="#"><i class="icon">🧾</i> Tax Calculation</a></li>
+                    <li><a href="#"><i class="icon">📅</i> Budget</a></li>
+                    <li><a href="#"><i class="icon">💱</i> Currency</a></li>
+                    <li><a href="#"><i the="icon">📉</i> Expenses</a></li>
+                    <li><a href="#"><i class="icon">🏦</i> Debts</a></li>
+                    <li><a href="#"><i class="icon">🎯</i> Financial Goals</a></li>
+                    <li><a href="#"><i class="icon">🔄</i> Recurring Transactions</a></li>
+                </ul>
+            </nav>
+            <h2>ACCOUNT PAGES</h2>
+            <nav>
+                <ul>
+                    <li><a href="#"><i class="icon">👤</i> Profile</a></li>
+                    <li><a href="#"><i class="icon">🔐</i> Sign In</a></li>
+                    <li><a href="#"><i class="icon">✍️</i> Sign Up</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="content">
+            <header>
+                <h2>Dashboard</h2>
+                <div class="user-menu">
+                    <input type="search" placeholder="Type here...">
+                    <button class="icon-btn">👤</button>
+                    <button class="icon-btn">⚙️</button>
+                    <button class="icon-btn">🔔</button>
+                </div>
+            </header>
+            <div class="welcome-message">
+                <h1>Welcome to Personal Finance Management</h1>
+                <p>Take Control of Your Financial Future Today</p>
+            </div>
+            <div class="stats">
+                <div class="stat-card">
+                    <div class="stat-icon">💰</div>
+                    <div class="stat-info">
+                        <h3>Today's Money</h3>
+                        <p>$53,000 <span class="positive">+55%</span></p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">👥</div>
+                    <div class="stat-info">
+                        <h3>Today's Users</h3>
+                        <p>2,300 <span class="positive">+3%</span></p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">👥</div>
+                    <div class="stat-info">
+                        <h3>New Clients</h3>
+                        <p>+3,462 <span class="positive">+2%</span></p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">💼</div>
+                    <div class="stat-info">
+                        <h3>Financial Goals</h3>
+                        <p>8 Goals <span class="positive">+2%</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="dashboard-cards">
+                <div class="card">
+                    <h3>Manage Transactions</h3>
+                    <p>Track and manage all your financial transactions with ease.</p>
+                    <a href="#" class="btn">Explore More →</a>
+                </div>
+                <div class="card dark">
+                    <h3>Set Financial Goals</h3>
+                    <p>Set and track your financial goals to achieve financial freedom.</p>
+                    <a href="#" class="btn">Start Now →</a>
+                </div>
+            </div>
+            <div class="charts">
+                <div class="chart-container">
+                    <h3>Financial Overview</h3>
+                    <p><span class="positive">+5% more</span> in 2021</p>
+                    <canvas id="financialChart"></canvas>
+                </div>
+                <div class="chart-container">
+                    <h3>Debts Breakdown</h3>
+                    <canvas id="debtsChart"></canvas>
+                </div>
+                <div class="chart-container">
+                    <h3>Financial Goals Progress</h3>
+                    <canvas id="financialGoalsChart"></canvas>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="/js/script1.js"></script>
+</body>
+</html>
